@@ -19,6 +19,8 @@
   "homepage": "https://github.com/LucasDoCouto/pdr-bootstrap-site#readme",
   "dependencies": {
     "bootstrap": "^5.3.0",
-    "bootstrap-icons": "^1.10.5"
+    "bootstrap-icons": "^1.10.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   }
 }
