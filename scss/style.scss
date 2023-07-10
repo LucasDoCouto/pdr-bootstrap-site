@@ -1,0 +1,29 @@
+$pdr-light: #ffff;
+$pdr-darkBlue: #003eaa;
+$pdr-green: #0BD8278F;
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica", Sans-serif;
+}
+
+.pdr-banner{
+    background-color: $pdr-darkBlue;
+    background: url(../images/background-banner-2.png);
+    background-size: cover;
+    color: $pdr-light;
+    min-height: 500px;
+}
+
+
+// Buttons
+
+.pdr-btn-green{
+    background-color: $pdr-green;
+    text-align: center;
+    border-radius: 50rem;
+}
