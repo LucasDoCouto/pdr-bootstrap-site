@@ -1,26 +1,18 @@
-$pdr-light: #ffff;
-$pdr-darkBlue: #003eaa;
-$pdr-green: #0BD8278F;
-
+@import "_variables";
 
 *{
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Helvetica", Sans-serif;
-}
+// body{
+//     font-family: "Helvetica", Sans-serif;
+// }
 
-.pdr-banner{
-    background-color: $pdr-darkBlue;
-    background: url(../images/background-banner-2.png);
-    background-size: cover;
-    color: $pdr-light;
-    min-height: 500px;
-}
+// Importando módulos do site
 
+@import "_pdr-banner";
 
-// Buttons
+// Botões personalizados
 
 .pdr-btn-green{
     background-color: $pdr-green;
