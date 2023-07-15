@@ -1,12 +1,16 @@
 @import "_variables";
 
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-// body{
-//     font-family: "Helvetica", Sans-serif;
-// }
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
 
 // Importando módulos do site
 
@@ -20,6 +24,11 @@
     border-radius: 50rem;
 }
 
-.pdr-about-title{
+.pdr-title{
     color: $pdr-darkBlue;
+}
+
+.pdr-case-img img{
+    width: 150px;
+    height: auto;
 }
