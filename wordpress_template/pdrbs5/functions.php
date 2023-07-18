@@ -24,5 +24,9 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 register_nav_menus( array(
     'principal' => __('Menu Principal', 'pdrbs5')
 ));
+
+// Define as thumbnails
+
+add_theme_support( 'post-thumbnails' );
     
 ?>
