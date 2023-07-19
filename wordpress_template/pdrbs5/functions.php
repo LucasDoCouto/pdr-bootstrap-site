@@ -26,7 +26,6 @@ register_nav_menus( array(
 ));
 
 // Define as thumbnails
-
 add_theme_support( 'post-thumbnails' );
     
 ?>

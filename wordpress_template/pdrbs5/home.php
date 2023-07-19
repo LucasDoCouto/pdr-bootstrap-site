@@ -186,7 +186,7 @@
           <?php 
           $my_args = array(
             'post_type' => 'post',
-            'post_per_page' => '3',
+            'posts_per_page' => '3',
             'category_name' => 'blog'
           );
 
@@ -197,9 +197,10 @@
           <?php 
             if ($my_query->have_posts()) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
           
-          <div class="col-md-4 d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.274), rgba(14, 32, 44, 0.897)), url(<?php the_post_thumbnail(); ?>);">
+          <div class="col-md-4 d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.274), rgba(14, 32, 44, 0.897)), url('<?php the_post_thumbnail_url(); ?>');">
             <div class="text-light text-start m-3">
-              <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              
+              <h2><a href="<?php the_permalink(); ?>" class="text-decoration-none text-light"><?php the_title(); ?></a></h2>
               <p class="m-0">julho 11, 2023</p>
             </div>
           </div>
