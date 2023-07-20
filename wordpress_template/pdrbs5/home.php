@@ -100,7 +100,7 @@
     <!-- Fim sobre nós -->
 
     <!-- Inicio contato -->
-    <section class="bg-info text-light py-5">
+    <section class="bg-info text-light py-5" id="contato">
 
       <div class="container">
 
@@ -197,14 +197,16 @@
           <?php 
             if ($my_query->have_posts()) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
           
-          <div class="col-md-4 d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.274), rgba(14, 32, 44, 0.897)), url('<?php the_post_thumbnail_url(); ?>');">
+          <a href="<?php the_permalink(); ?>" class="text-decoration-none text-light col-md-4">
+          <div class="d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.274), rgba(14, 32, 44, 0.897)), url('<?php the_post_thumbnail_url(); ?>');">
             <div class="text-light text-start m-3">
               
-              <h2><a href="<?php the_permalink(); ?>" class="text-decoration-none text-light"><?php the_title(); ?></a></h2>
-              <p class="m-0">julho 11, 2023</p>
+              <h2><?php the_title(); ?></h2>
+              <p class="m-0"><?php echo get_the_date();?></p>
             </div>
           </div>
-
+          </a>
+          
           <?php endwhile; endif; ?>
 
           <?php wp_reset_query(); ?>
