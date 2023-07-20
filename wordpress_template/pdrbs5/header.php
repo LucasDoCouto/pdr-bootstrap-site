@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
 
     </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100 pdr-light-grey-bg">
 
     <!-- Inicio menu -->
     <nav class="navbar navbar-expand-lg bg-light">

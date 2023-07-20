@@ -1,6 +1,6 @@
     <!-- Início rodapé -->
 
-    <footer class="d-flex bg-dark text-light align-items-center justify-content-center p-3">
+    <footer class="d-flex bg-dark text-light align-items-center justify-content-center p-3 mt-auto">
       <h6>2023 © PDR Assessoria Empresarial</h6>
     </footer>
 
