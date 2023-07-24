@@ -23,31 +23,32 @@
   <body class="d-flex flex-column min-vh-100 pdr-light-grey-bg">
 
     <!-- Inicio menu -->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
+
+    <nav class="navbar navbar-expand-md bg-light">
+    <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
           <img src="<?php bloginfo('template_url') ?>/images/logo.svg" alt="PDR" width="100">
-        </a>    
+        </a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo get_home_url(); ?>">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo get_home_url(); ?>/index.php/servicos">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo get_home_url(); ?>#contato">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo get_home_url(); ?>/blog">Blog</a>
-            </li>
+            <?php
+              wp_nav_menu(array(
+                  'theme_location' => 'main-menu',
+                  'container' => false,
+                  'menu_class' => '',
+                  'fallback_cb' => '__return_false',
+                  'items_wrap' => '<li id="%1$s" class="nav-link %2$s">%3$s</li>',
+                  'depth' => 2,
+                  'walker' => new bootstrap_5_wp_nav_menu_walker()
+              ));
+              ?>
           </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
     <!-- Fim menu -->
