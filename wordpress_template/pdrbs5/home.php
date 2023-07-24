@@ -7,7 +7,7 @@
           <div class="col-12 col-md-5 my-5">
             <h1>Promovendo Ética, Compliance e Integridade.</h1>
             <p>PDR Assessoria Empresarial, empresa de direito privado, tem como finalidade e objetivo instaurar a ética e a integridade nas organizações. Buscamos disseminar a cultura do Compliance e a importância da conformidade com regras, normas, decretos e legislações, incluindo a Lei Geral de Proteção de Dados. Nossa missão é levar os preceitos da ética, dos direitos fundamentais, da paz social e da cidadania tanto à sociedade quanto às empresas.</p>
-            <button type="button" class="btn text-center pdr-btn-green" style="display: flex; align-items: center;">Entre em Contato</button>
+            <button type="button" class="btn text-center pdr-btn-green" style="display: flex; align-items: center;"><a href="<?php echo get_home_url(); ?>#contato" class="text-decoration-none text-light">Entre em Contato</a></button>
           </div>
         </div>
       </div>

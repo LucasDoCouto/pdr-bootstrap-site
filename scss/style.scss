@@ -50,10 +50,14 @@ body{
     background-color: #DADADA;
 }
 
-.pdr-dark-bg{
-    background-color: $dark;
-}
 
 .pdr-single-post-img{
     height: 250px;
+}
+
+.pdr-services-img{
+    border-radius: 15%;
+    border: none;
+    height: auto;
+    max-width: 100%;
 }

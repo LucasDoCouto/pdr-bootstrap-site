@@ -37,7 +37,7 @@
               <a class="nav-link active" aria-current="page" href="<?php echo get_home_url(); ?>">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo get_home_url(); ?>/servicos">Serviços</a>
+              <a class="nav-link" href="<?php echo get_home_url(); ?>/index.php/servicos">Serviços</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo get_home_url(); ?>#contato">Contato</a>
