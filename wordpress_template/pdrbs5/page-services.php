@@ -1,6 +1,6 @@
-    <?php /* Template name: pagina de serviços */ ?>
+<?php /* Template name: pagina de serviços */ ?>
 
-    <?php get_header(); ?>
+<?php get_header(); ?>
 
     <!-- Inicio Serviços -->
 
@@ -43,4 +43,4 @@
 
     <!-- Fim Serviços -->
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

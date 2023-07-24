@@ -25,19 +25,19 @@
           <div class="row-sm col-md-3 d-flex flex-column justify-content-center align-items-center bg-dark p-3 m5 rounded-4">
             <img src="<?php bloginfo('template_url') ?>/images/compliance.svg" alt="Compliance Icon" width="59" class="mb-4">
             <h4 class="fw-semibold">Compliance</h4>
-            <button type="button" class="btn btn-info text-light fw-semibold">Saiba Mais</button>
+            <a href="<?php echo get_home_url(); ?>/servicos" class="text-decoration-none text-light"><button type="button" class="btn btn-info text-light fw-semibold">Saiba Mais</button></a>
           </div>
 
           <div class="row-sm col-md-3 d-flex flex-column justify-content-center align-items-center bg-dark p-3 rounded-4">
             <img src="<?php bloginfo('template_url') ?>/images/LGPD.svg" alt="LGPD Icon" width="59" class="mb-4">
             <h4 class="fw-semibold">LGPD</h4>
-            <button type="button" class="btn btn-info text-light fw-semibold">Saiba Mais</button>
+            <a href="<?php echo get_home_url(); ?>/servicos" class="text-decoration-none text-light"><button type="button" class="btn btn-info text-light fw-semibold">Saiba Mais</button></a>
           </div>
 
           <div class="row-sm col-md-3 d-flex flex-column justify-content-center align-items-center bg-dark p-3 rounded-4">
             <img src="<?php bloginfo('template_url') ?>/images/treinamentos.svg" alt="Treinamentos Icon" width="59" class="mb-4">
             <h4 class="fw-semibold">Treinamentos</h4>
-            <button type="button" class="btn btn-info text-light fw-semibold">Saiba Mais</button>
+            <a href="<?php echo get_home_url(); ?>/servicos" class="text-decoration-none text-light"><button type="button" class="btn btn-info text-light fw-semibold">Saiba Mais</button></a>
           </div>
 
         </div>
