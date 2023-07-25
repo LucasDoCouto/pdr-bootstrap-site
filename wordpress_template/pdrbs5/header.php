@@ -41,7 +41,7 @@
                   'container' => false,
                   'menu_class' => '',
                   'fallback_cb' => '__return_false',
-                  'items_wrap' => '<li id="%1$s" class="nav-link %2$s">%3$s</li>',
+                  'items_wrap' => '<ul id="%1$s" class="list-unstyled navbar-nav nav-link py-0 %2$s">%3$s</ul>',
                   'depth' => 2,
                   'walker' => new bootstrap_5_wp_nav_menu_walker()
               ));

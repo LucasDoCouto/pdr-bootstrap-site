@@ -83,11 +83,11 @@
 
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
 
-          <div class="col-4 order-2 order-md-1">
+          <div class="col col-md-4 order-2 order-md-1 align-items-end">
             <img src="<?php bloginfo('template_url') ?>/images/triangulo_pdr.svg" alt="Triangulo PDR" width="200">
           </div>
 
-          <div class="col order-1 order-md-2 pt-5 pb-3 pl-3">
+          <div class="col order-1 order-md-2 pt-5 pl-3">
             <h2 class="fw-semibold pdr-title">SOBRE NÓS</h2>
             <p>A PDR foi fundada em 2020, e está em constantemente aprimoramento e crescimento através do trabalho realizado por suas sócias fundadoras atuando nas empresas com a implantação  do programa de integridade e da adequação da Lei Geral de Proteção de Dados alem de outras ferramentas.</p>
           </div>
@@ -214,7 +214,7 @@
 
         <div class="row py-3 d-flex align-items-center justify-content-center mt-3">
           <div class="col">
-            <button type="button" class="btn btn-info text-light fw-semibold">Veja todas as publicações</button>
+            <a href="<?php echo get_home_url(); ?>/blog"><button type="button" class="btn btn-info text-light fw-semibold">Veja todas as publicações</button></a>
           </div>
         </div>
 
