@@ -20,6 +20,19 @@ if(!function_exists('_wp_render_title_tag')){
 // Define as thumbnails
 add_theme_support( 'post-thumbnails' );
 
+// Cropa as imagens do thumbnail
+
+set_post_thumbnail_size( 1280, 720, true );
+
+// Estiliza os botões de paginação
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="btn btn-primary"';
+}
+
 // bootstrap 5 wp_nav_menu walker
 class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 {

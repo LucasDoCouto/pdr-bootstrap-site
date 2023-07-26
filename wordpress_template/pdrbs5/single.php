@@ -47,7 +47,7 @@
 
                         <div class="p-3">
                             <a href="<?php the_permalink(); ?>" class="text-decoration-none link-dark"><h5><?php the_title(); ?></h5></a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor vestibulum risus, ac fringilla augue auctor eu. Vivamus dignissim malesuada nisl at laoreet.</p>
+                            <p><?php the_excerpt(); ?></p>
                             <a href="<?php the_permalink(); ?>" class="text-decoration-none">leia mais</a>
                         </div>
                     </div>
