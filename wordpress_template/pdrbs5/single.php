@@ -9,7 +9,7 @@
                 <!-- Inicio Post -->
 
                 <div class="col col-lg-7 bg-light rounded-4 mx-3 mx-md-0 my-3 p-4">
-                    <div class="col d-flex align-items-end pdr-bg-image pdr-single-post-img text-light rounded-4 p-4 " style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.274), rgba(14, 32, 44, 0.897)), url(<?php the_post_thumbnail_url(); ?>);">
+                    <div class="col d-flex align-items-end pdr-bg-image pdr-single-post-img text-light rounded-4 p-4 " style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 44, 73, 0.897)), url(<?php the_post_thumbnail_url(); ?>);">
                         <h2><?php the_title(); ?></h2>
                     </div>
                     <div class="my-3 p-4">

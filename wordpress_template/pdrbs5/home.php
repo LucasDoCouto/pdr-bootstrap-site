@@ -30,8 +30,6 @@
 
                 <?php previous_posts_link('Página Anterior') ?>
                 <?php next_posts_link('Próxima página') ?>
-                <!-- <a href=""><button class="btn btn-primary">Próxima página</button></a>
-                <a href=""><button class="btn btn-primary">Página anterior</button></a> -->
               </div>
 
             </div>

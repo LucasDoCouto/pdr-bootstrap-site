@@ -9,7 +9,9 @@
           <div class="col-12 col-md-5 my-5">
             <h1>Promovendo Ética, Compliance e Integridade.</h1>
             <p>PDR Assessoria Empresarial, empresa de direito privado, tem como finalidade e objetivo instaurar a ética e a integridade nas organizações. Buscamos disseminar a cultura do Compliance e a importância da conformidade com regras, normas, decretos e legislações, incluindo a Lei Geral de Proteção de Dados. Nossa missão é levar os preceitos da ética, dos direitos fundamentais, da paz social e da cidadania tanto à sociedade quanto às empresas.</p>
-            <button type="button" class="btn text-center pdr-btn-green" style="display: flex; align-items: center;"><a href="<?php echo get_home_url(); ?>#contato" class="text-decoration-none text-light">Entre em Contato</a></button>
+            <div class="d-flex align-items-center justify-content-center">
+              <a href="<?php echo get_home_url(); ?>#contato" class="text-decoration-none text-light"><button type="button" class="btn btn-success rounded-pill text-light" style="display: flex; align-items: center;"><b>Entre em Contato</b></button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -163,7 +165,7 @@
               <div class="mb-2">
                 <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensagem" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-success mb-1">Enviar</button>
+              <button type="submit" class="btn btn-success mb-1 w-100 text-light"><b>Enviar</b></button>
             </div>
 
           </div>
@@ -200,7 +202,7 @@
             if ($my_query->have_posts()) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
           
           <a href="<?php the_permalink(); ?>" class="text-decoration-none text-light col-md-4">
-          <div class="d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.274), rgba(14, 32, 44, 0.897)), url('<?php the_post_thumbnail_url(); ?>');">
+          <div class="d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 44, 73, 0.897)), url('<?php the_post_thumbnail_url(); ?>');">
             <div class="text-light text-start m-3">
               
               <h2><?php the_title(); ?></h2>
