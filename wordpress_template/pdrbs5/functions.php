@@ -115,38 +115,6 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
   }
 }
 
-// Walker para menu rodapé
-
-class Footer_Walker_Nav_Menu extends Walker_Nav_Menu {
-  // Início do menu - Cria a <ul>
-  public function start_lvl( &$output, $depth = 0, $args = array() ) {
-      $indent = str_repeat( "\t", $depth );
-      $output .= "\n$indent<ul class=\"sub-menu\">\n";
-  }
-
-  // Início do item do menu
-  public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-      $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
-
-      $output .= $indent . '<li class="meu-item-menu">';
-      $output .= $args->before;
-      $output .= '<a href="' . $item->url . '">';
-      $output .= $args->link_before . $item->title . $args->link_after;
-      $output .= '</a>';
-      $output .= $args->after;
-  }
-
-  // Fim do item do menu
-  public function end_el( &$output, $item, $depth = 0, $args = array() ) {
-      $output .= '</li>';
-  }
-
-  // Fim do menu - Fecha a </ul>
-  public function end_lvl( &$output, $depth = 0, $args = array() ) {
-      $indent = str_repeat( "\t", $depth );
-      $output .= "$indent</ul>\n";
-  }
-}
 
 // registra os menus
 register_nav_menu('main-menu', 'Menu Principal');

@@ -114,10 +114,10 @@
 
         </div>
 
-        <div class="row">
-          <div class="d-flex flex-column-reverse flex-md-row gap-3">
+        <!-- <div class="row"> -->
+          <div class="row row-cols-1 row-cols-lg-2">
 
-            <div class="col col-md-6">
+            <div class="col p-2 p-md-1 order-2 order-lg-1">
 
               <div class="d-flex flex-row gap-3">
                 <div class="">
@@ -152,25 +152,13 @@
   
   
             </div>
-            <div class="col col-md-6">
-              <div class="mb-2">
-                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-              </div>
-              <div class="mb-2">
-                <input type="business" class="form-control" id="exampleFormControlInput1" placeholder="Empresa">
-              </div>
-              <div class="mb-2">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
-              </div>
-              <div class="mb-2">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensagem" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-success mb-1 w-100 text-light"><b>Enviar</b></button>
+            <div class="col py-4 px-2 p-lg-1 order-1 order-lg-2">
+              <?php echo do_shortcode('[wpforms id="40" title="false" walker="bootstrap_classes_wpforms_walker"]'); ?>
             </div>
 
           </div>
           
-        </div>
+        <!-- </div> -->
 
       </div>
 
@@ -185,7 +173,7 @@
           <h2 class="fw-semibold text-center pdr-title">ÚLTIMAS PUBLICAÇÕES</h2>
         </div>
 
-        <div class="d-flex flex-column flex-md-row gap-3">
+        <div class="d-flex flex-column flex-lg-row gap-3">
 
           <?php 
           $my_args = array(
@@ -201,7 +189,7 @@
           <?php 
             if ($my_query->have_posts()) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
           
-          <a href="<?php the_permalink(); ?>" class="text-decoration-none text-light col-md-4">
+          <a href="<?php the_permalink(); ?>" class="text-decoration-none text-light col-lg-4">
           <div class="d-flex align-items-end pdr-bg-image pdr-home-post" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 44, 73, 0.897)), url('<?php the_post_thumbnail_url(); ?>');">
             <div class="text-light text-start m-3">
               

@@ -66,3 +66,25 @@ body{
     height: auto;
     max-width: 100%;
 }
+
+.wpforms-container-full{
+    margin: 0 !important;
+}
+
+.fx-relay-email-input-wrapper{
+    width: 100% !important;
+}
+
+.wpforms-container-full button[type="submit"]{
+    min-width: 100%;
+    background-color: #61CE70 !important;
+}
+
+.wpforms-submit-container{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fx-relay-email-input-wrapper em, .wpforms-has-error em{
+    display: none !important;
+}
